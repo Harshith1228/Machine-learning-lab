@@ -1,0 +1,17 @@
+
+def count(a):
+    vowels=0
+    consonants=0
+    b=["A","a","i","I","E","e","O","o","U","u"]
+    for i in a:
+        if i in b:
+            vowels+=1
+        else:
+            consonants+=1
+    return vowels,consonants
+
+
+a = input("enter a string")
+result=count(a)
+print("no of vowels, consonants", result)
+
